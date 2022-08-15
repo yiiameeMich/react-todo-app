@@ -1,0 +1,24 @@
+.App {
+  height: 100vh;
+  background-color: #CA955C;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  background-repeat: repeat;
+  overflow: hidden;
+}
+#emptyList{
+  padding: 17px 16px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+.appContainer{
+  padding-top: 30px;
+}
+.search-span{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}

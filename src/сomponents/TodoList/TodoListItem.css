@@ -1,0 +1,34 @@
+.todo-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center ;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+.todo-list-item-label{
+    cursor: pointer;
+    user-select: none;
+}
+.todo-list-item.done{
+    text-decoration: line-through;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+}
+
+.todo-list-item.important{
+    color: #CA955C;
+    font-weight: 700;
+}
+
+.btn.btn-outline-success.btn-sm{
+    margin: 5px;
+    height: 32px;
+    width: 32px;
+}
+
+.btn.btn-outline-danger.btn-sm{
+    margin: 5px;
+    height: 32px;
+    width: 32px;
+}

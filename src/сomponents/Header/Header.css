@@ -1,0 +1,18 @@
+.HeaderHeading {
+    margin: 20px;
+    font-size: 54px;
+    font-weight: 700;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+.HeaderContainer {
+    display: flex;
+    align-items: baseline;
+}
+.ActiveStatus {
+    width: 200px;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Roboto Slab', serif;
+}
