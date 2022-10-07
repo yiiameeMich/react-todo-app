@@ -2,7 +2,7 @@
   height: 100vh;
   background-color: #CA955C;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   background-repeat: repeat;
   overflow: hidden;
