@@ -20,12 +20,13 @@ export default class App extends Component {
 			done: false,
 			id: this.maxId++
 		}
+
 	};
 
 	state = {
-		todoList: [],
+		todoList: JSON.parse(localStorage.getItem('todos')) || [],
 		filter: 'all', //'done' 'active'
-		filteredList: [],
+		filteredList: JSON.parse(localStorage.getItem('todos')) || [],
 	}
 
 	onFilterChange = (filter) => {
@@ -48,37 +49,33 @@ export default class App extends Component {
 
 	deleteItem = (id) => {
 
-		this.setState(({todoList, filteredList}) => {
+		this.setState(({todoList}) => {
 
-			const index = todoList.findIndex((el) => el.id === id);
+			const newList = [...todoList].filter((el) => el.id !== id)
 
-			const newList = [
-				...todoList.slice(0, index),
-				...todoList.slice(index + 1)
-			];
-
-			const filtList = [
-				...filteredList.slice(0, index),
-				...filteredList.slice(index + 1)
-			];
+			localStorage.setItem('todos', JSON.stringify(newList))
 
 			return {
 				todoList: newList,
-				filteredList: filtList
+				filteredList: newList
 			};
 		});
 	};
 
 	addItem = (text) => {
-		const newItem = this.createTodoItem(text);
+
+		const newItem = this.createTodoItem(text)
 
 		this.onFilterChange('all');
 
 		this.setState(({todoList}) => {
+
 			const newList = [
 				...todoList,
 				newItem
 			];
+
+			localStorage.setItem('todos', JSON.stringify(newList))
 
 			return {
 				todoList: newList,
