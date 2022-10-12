@@ -19,7 +19,7 @@ export default class TodoListItem extends Component {
 			<span className={classNames}>
 				<span className='todo-list-item-label'
 				      onClick={onToggleDone}>
-					{label.length > 40 ? `${label.slice(0, 50)}... ` : label}
+					{label.length > 40 ? `${label.slice(0, 20)}... ` : label}
 				</span>
 			<span>
 			<button type='button' className='btn btn-outline-success btn-sm'

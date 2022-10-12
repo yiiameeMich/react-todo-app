@@ -17,6 +17,12 @@
     box-shadow: 0 0 5px 1px #198754;
 }
 
+@media (max-width:882px) {
+    .btn-group {
+        margin: 10px;
+    }
+}
+
 /*.btn-success {
     --bs-btn-color: #fff;
     --bs-btn-bg: #198754;

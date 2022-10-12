@@ -22,3 +22,9 @@
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 882px) {
+  .search-span {
+    flex-direction: column;
+  }
+}

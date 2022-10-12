@@ -16,3 +16,17 @@
     padding: 20px;
     font-family: 'Roboto Slab', serif;
 }
+
+@media (max-width: 882px) {
+    .HeaderContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .HeaderHeading {
+        margin: 0;
+        text-align: center;
+    }
+    .ActiveStatus {
+        margin: 0;
+    }
+}

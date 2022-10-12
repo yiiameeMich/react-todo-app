@@ -164,7 +164,7 @@ export default class App extends Component {
 			);
 		} else {
 
-			if (filter === 'done'){
+			if (filter === 'done') {
 				return (
 					<div className="App">
 						<div className='appContainer'>
@@ -183,7 +183,7 @@ export default class App extends Component {
 						</div>
 					</div>
 				)
-			} else if (filter === 'active'){
+			} else if (filter === 'active') {
 				return (
 					<div className="App">
 						<div className='appContainer'>
@@ -202,7 +202,7 @@ export default class App extends Component {
 						</div>
 					</div>
 				)
-			} else if (filter === 'important'){
+			} else if (filter === 'important') {
 				return (
 					<div className="App">
 						<div className='appContainer'>
@@ -221,15 +221,15 @@ export default class App extends Component {
 						</div>
 					</div>
 				)
-			} else{
+			} else {
 				return (
 					<div className="App">
 						<div className='appContainer'>
 							<Header left={todoLeft} done={doneCount}/>
 							<span className='search-span'>
-							<SearchBar onAdd={this.addItem}/>
-							<FilterButtons filter={filter} onFilterChange={this.filterItems} todos={todoList}/>
-						</span>
+								<SearchBar onAdd={this.addItem}/>
+								<FilterButtons filter={filter} onFilterChange={this.filterItems} todos={todoList}/>
+							</span>
 							<div className='list-container'>
 								<ul className='list-group todo-list'>
 									<li className='list-group-item' id='emptyList'>
