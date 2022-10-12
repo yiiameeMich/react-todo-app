@@ -12,6 +12,9 @@ export default class FilterButtons extends Component{
 		},
 		{
 			name: 'done', label: 'Done'
+		},
+		{
+			name: 'important', label: 'Important'
 		}
 	];
 

@@ -40,11 +40,15 @@ export default class App extends Component {
 
 		const newItem = {...oldItem, [prop]: !oldItem[prop]};
 
-		return [
+		const newList = [
 			...arr.slice(0, index),
 			newItem,
 			...arr.slice(index + 1)
 		];
+
+		localStorage.setItem('todos', JSON.stringify(newList))
+
+		return newList
 	}
 
 	deleteItem = (id) => {
@@ -124,6 +128,10 @@ export default class App extends Component {
 				newArr = items.filter((item) => item.done);
 				this.setState({filteredList: newArr});
 				break;
+			case 'important':
+				newArr = items.filter((item) => item.important);
+				this.setState({filteredList: newArr});
+				break;
 			default:
 				return items;
 		}
@@ -188,6 +196,25 @@ export default class App extends Component {
 								<ul className='list-group todo-list'>
 									<li className='list-group-item' id='emptyList'>
 										You don`t have any active tasks right now
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				)
+			} else if (filter === 'important'){
+				return (
+					<div className="App">
+						<div className='appContainer'>
+							<Header left={todoLeft} done={doneCount}/>
+							<span className='search-span'>
+							<SearchBar onAdd={this.addItem}/>
+							<FilterButtons filter={filter} onFilterChange={this.filterItems} todos={todoList}/>
+						</span>
+							<div className='list-container'>
+								<ul className='list-group todo-list'>
+									<li className='list-group-item' id='emptyList'>
+										You haven`t marked any of your tasks as important
 									</li>
 								</ul>
 							</div>

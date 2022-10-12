@@ -1,5 +1,6 @@
 {
   "name": "todo-handler",
+  "homepage": "https://yiiameeMich.github.io/todohandler",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
