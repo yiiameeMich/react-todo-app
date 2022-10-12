@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/todohandler/static/css/main.99c27dc0.css",
+    "main.js": "/todohandler/static/js/main.9d57ce9c.js",
+    "static/js/787.253f7560.chunk.js": "/todohandler/static/js/787.253f7560.chunk.js",
+    "index.html": "/todohandler/index.html",
+    "main.99c27dc0.css.map": "/todohandler/static/css/main.99c27dc0.css.map",
+    "main.9d57ce9c.js.map": "/todohandler/static/js/main.9d57ce9c.js.map",
+    "787.253f7560.chunk.js.map": "/todohandler/static/js/787.253f7560.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99c27dc0.css",
+    "static/js/main.9d57ce9c.js"
+  ]
+}
