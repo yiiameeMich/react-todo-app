@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/todohandlerapp/static/css/main.051fb386.css",
-    "main.js": "/todohandlerapp/static/js/main.b28820f3.js",
+    "main.css": "/todohandlerapp/static/css/main.1f3046b1.css",
+    "main.js": "/todohandlerapp/static/js/main.20429f7a.js",
     "static/js/787.253f7560.chunk.js": "/todohandlerapp/static/js/787.253f7560.chunk.js",
     "index.html": "/todohandlerapp/index.html",
-    "main.051fb386.css.map": "/todohandlerapp/static/css/main.051fb386.css.map",
-    "main.b28820f3.js.map": "/todohandlerapp/static/js/main.b28820f3.js.map",
+    "main.1f3046b1.css.map": "/todohandlerapp/static/css/main.1f3046b1.css.map",
+    "main.20429f7a.js.map": "/todohandlerapp/static/js/main.20429f7a.js.map",
     "787.253f7560.chunk.js.map": "/todohandlerapp/static/js/787.253f7560.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.051fb386.css",
-    "static/js/main.b28820f3.js"
+    "static/css/main.1f3046b1.css",
+    "static/js/main.20429f7a.js"
   ]
 }
