@@ -28,8 +28,21 @@
 .btn.btn-outline-success.btn-sm{
     margin: 5px;
     height: 32px;
+    color: #9382AF;
+    border-color: #9382AF ;
     width: 32px;
 }
+
+.btn.btn-outline-success.btn-sm:hover,
+.btn.btn-outline-success.btn-sm:checked,
+.btn.btn-outline-success.btn-sm:focus,
+.btn.btn-outline-success.btn-sm:active {
+    background-color: #9382AF;
+    color: #ddd8ef;
+    border-color: #ddd8ef;
+    box-shadow: 5px 5px 5px #ddd8ef;
+}
+
 
 .btn.btn-outline-danger.btn-sm{
     margin: 5px;
