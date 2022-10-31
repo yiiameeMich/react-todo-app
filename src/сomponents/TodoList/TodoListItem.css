@@ -11,15 +11,18 @@
     cursor: pointer;
     user-select: none;
 }
-.todo-list-item.done{
+
+.todo-list-item.important{
+    color: #9382AF;
+    text-decoration: underline;
+    font-weight: 700;
+    text-shadow: 1px 2px 3px #fdedf7;
+}
+
+.todo-list-item.done {
     text-decoration: line-through;
     text-decoration-color: black;
     text-decoration-thickness: 2px;
-}
-
-.todo-list-item.important{
-    color: #198754;
-    font-weight: 700;
 }
 
 .btn.btn-outline-success.btn-sm{

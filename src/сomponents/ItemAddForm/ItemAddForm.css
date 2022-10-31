@@ -2,7 +2,13 @@
     margin: 0 5px 0 10px;
     color: white;
 }
-.btn.btn-success:hover{
-    box-shadow: 0 0 5px 1px #198754;
-    border-color: #198754;
+.btn.btn-success:hover, .btn.btn-success:focus {
+    box-shadow: 0 0 5px 1px #9382AF;
+}
+
+.btn.btn-success {
+    background-color: #ddd8ef;
+    border-color: #000;
+    color: #000;
+    font-weight: 600;
 }

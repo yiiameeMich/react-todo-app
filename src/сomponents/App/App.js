@@ -143,13 +143,15 @@ export default class App extends Component {
 
 		const doneCount = todoList.filter((el) => el.done).length;
 
+		const importantCount = todoList.filter((todo) => todo.important).length;
+
 		const todoLeft = todoList.length - doneCount;
 
 		if (filteredList.length >= 1) {
 			return (
 				<div className="App">
 					<div className='appContainer'>
-						<Header left={todoLeft} done={doneCount}/>
+						<Header left={todoLeft} done={doneCount} important={importantCount}/>
 						<span className='search-span'>
 							<SearchBar onAdd={this.addItem}/>
 							<FilterButtons filter={filter} onFilterChange={this.filterItems} todos={todoList}/>
@@ -168,7 +170,7 @@ export default class App extends Component {
 				return (
 					<div className="App">
 						<div className='appContainer'>
-							<Header left={todoLeft} done={doneCount}/>
+							<Header left={todoLeft} done={doneCount} important={importantCount}/>
 							<span className='search-span'>
 							<SearchBar onAdd={this.addItem}/>
 							<FilterButtons filter={filter} onFilterChange={this.filterItems} todos={todoList}/>
@@ -187,7 +189,7 @@ export default class App extends Component {
 				return (
 					<div className="App">
 						<div className='appContainer'>
-							<Header left={todoLeft} done={doneCount}/>
+							<Header left={todoLeft} done={doneCount} important={importantCount}/>
 							<span className='search-span'>
 							<SearchBar onAdd={this.addItem}/>
 							<FilterButtons filter={filter} onFilterChange={this.filterItems} todos={todoList}/>
@@ -206,7 +208,7 @@ export default class App extends Component {
 				return (
 					<div className="App">
 						<div className='appContainer'>
-							<Header left={todoLeft} done={doneCount}/>
+							<Header left={todoLeft} done={doneCount} important={importantCount}/>
 							<span className='search-span'>
 							<SearchBar onAdd={this.addItem}/>
 							<FilterButtons filter={filter} onFilterChange={this.filterItems} todos={todoList}/>
@@ -225,7 +227,7 @@ export default class App extends Component {
 				return (
 					<div className="App">
 						<div className='appContainer'>
-							<Header left={todoLeft} done={doneCount}/>
+							<Header left={todoLeft} done={doneCount} important={importantCount}/>
 							<span className='search-span'>
 								<SearchBar onAdd={this.addItem}/>
 								<FilterButtons filter={filter} onFilterChange={this.filterItems} todos={todoList}/>

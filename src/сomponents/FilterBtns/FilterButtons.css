@@ -6,15 +6,15 @@
 
 .btn.btn-info:hover{
     border-color: black ;
-    background-color: #EDDFB3;
-    box-shadow: 0 0 5px 1px #EDDFB3;
+    background-color: #fdedf7;
+    box-shadow: 0 0 5px 1px #fdedf7;
 }
 .btn.btn-active{
     font-weight: 700;
-    color: white;
+    color: #000;
     border-color: black ;
-    background-color: #198754;
-    box-shadow: 0 0 5px 1px #198754;
+    background-color: #ddd8ef;
+    box-shadow: 0 0 5px 1px #ddd8ef;
 }
 
 @media (max-width:882px) {

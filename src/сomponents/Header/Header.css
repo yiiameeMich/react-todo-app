@@ -3,24 +3,34 @@
     font-size: 54px;
     font-weight: 700;
     font-family: 'Oleo Script Swash Caps', cursive;
+    color: #9382AF;
+    text-shadow: 1px 2px 3px #666;
 }
 .HeaderContainer {
     display: flex;
-    align-items: baseline;
+    align-items: center;
 }
+.activeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
 .ActiveStatus {
     width: 200px;
     font-size: 18px;
     font-weight: 800;
-    margin: 20px;
-    padding: 20px;
     font-family: 'Roboto Slab', serif;
+    color: #9382AF;
 }
 
 @media (max-width: 882px) {
     .HeaderContainer {
         flex-direction: column;
-        align-items: center;
+        align-items: baseline;
+        justify-content: center;
     }
     .HeaderHeading {
         margin: 0;
